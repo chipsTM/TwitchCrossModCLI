@@ -93,8 +93,10 @@ func main() {
 	// Connect to channels and ban users
 	for _, c := range channels {
 		client.Join(c)
-		fmt.Println("Banning users...")
-		for _, u := range banList {
+		for i, u := range banList {
+			if i == 0 {
+				fmt.Println("Banning users...")
+			}
 			client.Ban(c, u, "banned via TwitchCrossMod")
 		}
 
