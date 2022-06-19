@@ -98,6 +98,7 @@ func main() {
 				fmt.Println("Banning users...")
 			}
 			client.Ban(c, u, "banned via TwitchCrossMod")
+			time.Sleep(500 * time.Millisecond)
 		}
 
 		client.Depart(c)
