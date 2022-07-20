@@ -1,4 +1,4 @@
-module TwitchCrossMod
+module TwitchCrossModCLI
 
 go 1.18
 
